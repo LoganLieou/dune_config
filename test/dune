@@ -1,0 +1,8 @@
+(rule
+  (targets
+    gtk4-cflags.sexp
+    gtk4-clibs.sexp)
+  (action (run dune_config gtk4)))
+
+(executable
+  (name main))
